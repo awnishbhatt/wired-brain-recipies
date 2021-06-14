@@ -1,0 +1,41 @@
+git config --global user.name "a b"
+git config --global user.email "forpluralsight1900@gmail.com"
+git config --list
+cd C:\Awnish\IdeaProjects\learn-git\cafe_recipies
+git init
+
+echo "# wired-brain-recipies" >> readme.md
+git add .									// add new or modified file to stage (ready to commit)
+git commit -m "first commit"
+
+git remote add origin https://github.com/awnishbhatt/wired-brain-recipies.git
+
+git push -u origin master
+
+git status 				// sync state with remote
+
+git status -s					// short status
+	- M - modified
+	- A - Added to staging and ready to commi
+	- ?? - New untracked file by git
+	
+git diff 			//stage and not staged changes
+
+git commit -a -m "added new vendor file"		// SKIP THE ADD to stage area by -a
+
+git push origin master
+
+//remove a file from git tracking (basically delete a file you dont want in your project)
+git -rm <filename>
+
+git -rm --cached <filename> 	// git untracks the file, but not remove it
+
+git mv <fn1> <fn2> 				// rename file in git
+
+git brach <branchName>			// to create a new branch
+
+git checkout -b <branchName>    // -b creates the new branch, and checkout checks it out
+
+git checkout <branchName>		// checking our branches http://git-school.github.io/visualizing-git
+	- git checkout master
+	- git checkout myBracnh1
