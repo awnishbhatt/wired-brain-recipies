@@ -1,0 +1,2 @@
+vendor1 | Dallas | 1234567
+vendor1 | NY | 201-234-3456
